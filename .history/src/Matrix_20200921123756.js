@@ -4,7 +4,7 @@ import Cell from './cell';
 export default class Matrix extends Component {
   
   genRow = (vals) => {
-    return vals.map(val => {return <Cell value={val} />}) // replace me and render a cell component instead!
+    return vals.map(val => {return new Cell(value=> val)}) // replace me and render a cell component instead!
   }
   
   genMatrix = () => {
