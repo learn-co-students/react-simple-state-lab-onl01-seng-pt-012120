@@ -7,9 +7,13 @@ export default class Matrix extends Component {
   }
   
   genMatrix = () => {
+    console.log()
     return this.props.values.map(rowVals => <div className="row">{this.genRow(rowVals)}</div>)
   }
+  //  {console.log(genMatrix)}
   
+
+
   render() {
     return (
       <div id="matrix">
@@ -19,3 +23,4 @@ export default class Matrix extends Component {
   }
   
 }
+
